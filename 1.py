@@ -8,7 +8,7 @@ btn.click()
 time.sleep(4)
 btn=driver.find_element(By.CLASS_NAME,"tk-btn")
 btn.click()
-time.sleep(4)
+time.sleep(3)
 btn=driver.find_elements(By.CLASS_NAME,"iranYekan-14--bold")
 if len(btn)>1:
     btn=btn[1]
