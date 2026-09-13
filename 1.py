@@ -42,3 +42,6 @@ time.sleep(0.5)
 
 slow_type(inputs[2], "username", delay=0.1)
 time.sleep(0.5)
+
+slow_type(inputs[3], "password123", delay=0.1)
+time.sleep(1.5)
