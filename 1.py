@@ -22,3 +22,6 @@ btn1 = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[.//span[contai
 btn1.click()
 time.sleep(1.5)
 
+btn2 = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "iranYekan-14--bold")))
+btn2.click()
+time.sleep(1.5)
