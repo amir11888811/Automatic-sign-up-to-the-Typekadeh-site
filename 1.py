@@ -9,3 +9,5 @@ def slow_type(element, text, delay=0.1):
         element.send_keys(char)
         time.sleep(delay)
 
+options = webdriver.EdgeOptions()
+options.add_experimental_option("detach", True)
