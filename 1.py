@@ -45,3 +45,6 @@ time.sleep(0.5)
 
 slow_type(inputs[3], "password123", delay=0.1)
 time.sleep(1.5)
+
+submit_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(., 'ثبت نام')]")))
+submit_btn.click()
