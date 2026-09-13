@@ -39,3 +39,6 @@ time.sleep(0.5)
 
 slow_type(inputs[1], "09123456789", delay=0.1)
 time.sleep(0.5)
+
+slow_type(inputs[2], "username", delay=0.1)
+time.sleep(0.5)
