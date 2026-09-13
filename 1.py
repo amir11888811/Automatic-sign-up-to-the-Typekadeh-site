@@ -33,3 +33,6 @@ time.sleep(1.5)
 
 
 inputs = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "tk-input__dense")))
+
+slow_type(inputs[0], "your_email@gmail.com", delay=0.08)
+time.sleep(0.5)
