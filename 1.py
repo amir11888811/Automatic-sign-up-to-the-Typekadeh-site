@@ -18,7 +18,7 @@ wait = WebDriverWait(driver, 10)
 driver.get("https://typekadeh.com")
 time.sleep(2)
 
-btn1 = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[.//span[contains(text(), 'حساب کاربری')]]")))
+btn1 = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "header button.tk-btn")))
 btn1.click()
 time.sleep(1.5)
 
