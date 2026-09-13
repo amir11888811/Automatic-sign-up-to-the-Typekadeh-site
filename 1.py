@@ -36,3 +36,6 @@ inputs = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "tk-inpu
 
 slow_type(inputs[0], "your_email@gmail.com", delay=0.08)
 time.sleep(0.5)
+
+slow_type(inputs[1], "09123456789", delay=0.1)
+time.sleep(0.5)
