@@ -25,3 +25,8 @@ time.sleep(1.5)
 btn2 = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "iranYekan-14--bold")))
 btn2.click()
 time.sleep(1.5)
+
+btns = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "iranYekan-14--bold")))
+if len(btns) > 1:
+    btns[1].click()
+time.sleep(1.5)
