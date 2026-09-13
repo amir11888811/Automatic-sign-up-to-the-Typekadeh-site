@@ -34,18 +34,20 @@ time.sleep(1.5)
 
 inputs = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "tk-input__dense")))
 
-slow_type(inputs[0], "your_email@gmail.com", delay=0.08)
+slow_type(inputs[0], "your name", delay=0.08)
 time.sleep(0.5)
 
-slow_type(inputs[1], "09123456789", delay=0.1)
+slow_type(inputs[1], "your_email@gmail.com", delay=0.1)
 time.sleep(0.5)
 
-slow_type(inputs[2], "username", delay=0.1)
+slow_type(inputs[2], "0123456789", delay=0.1)
 time.sleep(0.5)
 
 slow_type(inputs[3], "password123", delay=0.1)
 time.sleep(1.5)
 
-btn1 = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "header button.tk-btn")))
-btn1.click()
-time.sleep(1.5)
+submit_btn = wait.until(
+    EC.element_to_be_clickable((By.XPATH, "(//button[contains(@class, 'tk-btn--primary')])[last()]"))
+)
+submit_btn.click()
+time.sleep(10)
